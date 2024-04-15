@@ -17,7 +17,17 @@ public class Question4
      * Hint: 2 loops are required. System.out.print(...) to print on single line.
      */
      
-    Scanner in = new Scanner(System.in);
-    
+      Scanner in = new Scanner(System.in);
+      int num = in.nextInt();
+
+      while (num > 0) {
+          for (int n = num; n > 0; n--) {
+              System.out.print("*");
+          }
+          System.out.println();
+          num--;
+      }
+
+      in.close();
   }
 }
